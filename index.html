@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<title>Jomark Lopez</title>
+	</head>
+	<body>
+		<header>
+			<div class="avatar-container">
+				<img src="imgs/avatar.png" width="200" height="200" />
+			</div>
+			<div class="greeting-header">
+				Hi, I'm <span class="name-highlight">Jomark Lopez</span>.
+			</div>
+			<div class="roles-subheader">
+				<span class="stud-highlight"> Student</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="webdev-highlight"> Front-End Developer</span>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<button
+						class="btn btn-primary"
+						id="aboutme-btn"
+						type="button"
+						data-toggle="collapse"
+						data-target="#aboutme-content"
+						onClick="scrollToNewContent('aboutme-btn')"
+					>
+						About Me <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="collapse multi-collapse" id="aboutme-content">
+						<div class="card card-body">
+							<div class="intro-container">
+								<img src="imgs/profiledp.png" width="200" />
+								<p>
+									I'm currently a 2nd Year Computer Science
+									student at the University of Santo Tomas in
+									Manila, Philippines. <br />My passion lies
+									in developing applications, particularly in
+									the front-end area of web development.
+								</p>
+								<div class="contacts">
+									<a
+										href="https://www.facebook.com/j.lopezzzzzzzzzzzzzzzzzzzzzzzz/"
+										target="_blank"
+										class="fa fa-facebook"
+									></a>
+									<a
+										href="https://www.linkedin.com/in/jomark-lopez-339b3310b"
+										target="_blank"
+										class="fa fa-linkedin"
+									></a>
+									<a
+										href="https://github.com/jomarklopez"
+										target="_blank"
+										class="fa fa-github"
+									></a>
+								</div>
+							</div>
+							<div class="skills-container">
+								<p>Python</p>
+								<div class="bar">
+									<div class="skills python">60%</div>
+								</div>
+
+								<p>Java</p>
+								<div class="bar">
+									<div class="skills java">75%</div>
+								</div>
+
+								<p>HTML5</p>
+								<div class="bar">
+									<div class="skills html">80%</div>
+								</div>
+
+								<p>CSS3</p>
+								<div class="bar">
+									<div class="skills css">80%</div>
+								</div>
+
+								<p>JavaScript</p>
+								<div class="bar">
+									<div class="skills js">75%</div>
+								</div>
+
+								<p>React JS</p>
+								<div class="bar">
+									<div class="skills react">75%</div>
+								</div>
+
+								<p>Node JS</p>
+								<div class="bar">
+									<div class="skills node">65%</div>
+								</div>
+
+								<p>UI Design</p>
+								<div class="bar">
+									<div class="skills uidesign">70%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button
+						class="btn btn-primary"
+						id="projects-btn"
+						type="button"
+						data-toggle="collapse"
+						data-target="#projects-content"
+						onClick="scrollToNewContent('projects-btn')"
+					>
+						My Personal Projects <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="collapse multi-collapse" id="projects-content">
+						<div class="card card-body">
+							<div class="project1-container">
+								<div class="description">
+									<h4>Online Pet Supplies Store</h4>
+									<span
+										>My attempt at making an E-Commerce
+										website. I was inspired to make this
+										because of my mother's business, while I
+										wasn't able to deploy it. I learned
+										mainly about javascript as it was the
+										first frontend website that I made.
+										<br />
+										Tech Stack: HTML5, CSS3,
+										JavaScript</span
+									>
+								</div>
+
+								<img
+									class="tabletimg"
+									src="imgs/ecommerce-website.png"
+								/>
+							</div>
+							<div class="project2-container">
+								<img
+									class="laptopimg"
+									src="imgs/quizmaker-website.png"
+								/>
+								<div class="description">
+									<h4>Quiz Maker</h4>
+									<span>
+										This application helped me learn most of
+										my knowledge about ReactJS. Here I
+										learned mostly about state management
+										and how it can help your code to be more
+										organized and structured.
+										<br />
+										React Redux and Redux Forms helped my
+										data pipeline to be more scalable and
+										readable. The backend consists of NodeJS
+										and MongoDB. They are both connected
+										using the ExpressJS.
+										<br />
+										Tech Stack: HTML5, CSS3, ReactJS,
+										NodeJS, Express, MongoDB, React-Redux
+									</span>
+								</div>
+							</div>
+							<div class="project3-container">
+								<div class="description">
+									<h4>ReactJS Calculator</h4>
+									<span
+										>As the first app I created using
+										ReactJS, I learned about the basics such
+										as passing props and creating
+										components.
+										<br />
+										Tech Stack: HTML5, CSS3, ReactJS</span
+									>
+								</div>
+								<img
+									class="laptopimg"
+									src="imgs/reactbasiccalcdemo-website.png"
+								/>
+							</div>
+							<div class="project4-container">
+								<img
+									class="laptopimg"
+									src="imgs/reactstackedcardsdemo-website.png"
+								/>
+								<div class="description">
+									<h4>Stacked Cards Component for ReactJS</h4>
+									<span>
+										This standalone component helped me
+										learn about React Hooks and Context.
+										Another thing I learned while developing
+										this is how animations can provide a
+										smoother user experience.
+										<br />
+										Tech Stack: HTML5, CSS3, ReactJS
+									</span>
+								</div>
+							</div>
+							<div class="project5-container">
+								<div class="imgs-container">
+									<img
+										class="tabletimg"
+										src="imgs/chatandgame-webapp1.png"
+									/>
+									<img
+										class="laptopimg"
+										src="imgs/chatandgame-webapp2.png"
+									/>
+								</div>
+								<div class="description">
+									<h4>Chatroom with TicTacToe</h4>
+									<span>
+										My main focus when developing this was
+										to learn how the server and client can
+										communicate with eachother in realtime.
+										Through the use of websockets,
+										specifically socket.io. I was able to
+										make my client send and request data
+										from the server vice - versa. For the
+										front-end I used ReactJS with Hooks and
+										Context.
+										<br />
+										Tech Stack: HTML5, CSS3, ReactJS,
+										NodeJS, Socket.io
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button
+						class="btn btn-primary"
+						id="hobbies-btn"
+						type="button"
+						data-toggle="collapse"
+						data-target="#hobbies-content"
+						onClick="scrollToNewContent('hobbies-btn')"
+					>
+						What I like to do <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="collapse multi-collapse" id="hobbies-content">
+						<div class="card card-body">
+							For now I'm exploring my hobbies and currently
+							taking up courses on machine learning. As I learn
+							more about machine learning, I was able to look at
+							it to how it really is. How it's not really as cool
+							as what the trends and news say, and how there is an
+							ongoing goal of making machine learning a basic
+							education just as computer literacy and basic coding
+							is being implemented as early as Grade 6.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid text-center">
+			<p>JOMARK LOPEZ ©2020</p>
+			Reach me at:
+			<p>
+				<a href="mailto:lopez.jomark@gmail.com"
+					>lopez.jomark@gmail.com</a
+				>
+			</p>
+		</footer>
+	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"
+	></script>
+	<script>
+		function scrollToNewContent(sectionName) {
+			setTimeout(function () {
+				document.querySelector('#' + sectionName).scrollIntoView({
+					behavior: 'smooth',
+				});
+			}, 200);
+		}
+	</script>
+</html>
